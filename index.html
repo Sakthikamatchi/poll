@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Single Question Poll</title>
+</head>
+<body>
+  <div class="poll-container">
+    <h1>Are you accepting this is the common independent country for all?<br>
+      இது அனைவருக்கும் பொதுவான சுதந்திர நாடு என்பதை ஏற்றுக்கொள்கிறீர்களா?</h1>
+    <form id="poll-form">
+      <label>
+        <input type="radio" name="color" value="Yes">
+        Yes
+      </label>
+      <label>
+        <input type="radio" name="color" value="no">
+        No
+      </label>
+      <label>
+        <input type="radio" name="color" value="maybe">
+        Maybe
+      </label>
+      <label>
+        <input type="radio" name="color" value="other">
+        Other: comment below Somthing on your mind!!!!
+      </label>
+      <div class="comment-section">
+        <label for="comment">Comments:</label>
+        <textarea id="comment" name="comment" rows="4"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="results" class="results-container"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
